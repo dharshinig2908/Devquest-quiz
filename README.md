@@ -71,7 +71,7 @@ DevQuest aims to transform traditional quizzes into an engaging learning experie
 
 Your Name: Add your name here.
 
-GitHub: Add your GitHub profile URL here.
+GitHub: https://github.com/dharshinig2908/Devquest-quiz/
 
 ---
 
