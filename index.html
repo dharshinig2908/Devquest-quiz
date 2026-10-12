@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+  <title>DevQuest | Ultimate Tech Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="DevQuest home">
+      <span class="brand-icon">D</span>
+      <span>DEV<span class="brand-accent">QUEST</span></span>
+    </a>
+
+    <div class="top-stats">
+      <div class="stat">
+        <span class="stat-label">TOTAL XP</span>
+        <strong id="xp">0</strong>
+      </div>
+      <div class="stat">
+        <span class="stat-label">SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="setup-panel">
+      <div class="eyebrow">
+        <span class="status-dot"></span>
+        YOUR NEXT LEVEL STARTS HERE
+      </div>
+
+      <h1>Think like a<br><span>Developer.</span></h1>
+
+      <p class="hero-text">
+        Enter the arena. Solve tech challenges. Earn XP.
+        Prove that you have what it takes.
+      </p>
+
+      <div class="feature-row">
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <strong>10</strong>
+          <span>Challenges</span>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">◷</span>
+          <strong>20 SEC</strong>
+          <span>Per question</span>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🏆</span>
+          <strong>100 XP</strong>
+          <span>Per correct answer</span>
+        </div>
+      </div>
+
+      <div class="setup-card">
+        <div>
+          <span class="section-kicker">MISSION BRIEFING</span>
+          <h2>Ready to begin?</h2>
+          <p>10 questions. One developer. Your journey starts now.</p>
+        </div>
+        <button class="primary-btn" id="start-btn" type="button">
+          Start Challenge <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="quiz-panel hidden" id="quiz-panel">
+      <div class="quiz-heading">
+        <div>
+          <span class="section-kicker">CURRENT MISSION</span>
+          <h2 id="question-count">MISSION 1 / 10</h2>
+        </div>
+        <div class="timer" id="timer" aria-live="polite">20s</div>
+      </div>
+
+      <div class="progress-info">
+        <span>MISSION PROGRESS</span>
+        <span id="progress-text">1 of 10</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <article class="question-card">
+        <span class="question-category" id="question-category">HTML</span>
+        <h2 id="question">Your question will appear here.</h2>
+        <p class="instruction">Choose the best answer to continue.</p>
+
+        <div class="answers" id="answers"></div>
+
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+
+        <p class="hint-text hidden" id="hint-text"></p>
+      </article>
+
+      <div class="powerups">
+        <button class="secondary-btn" id="hint-btn" type="button">
+          💡 Use Hint
+        </button>
+        <button class="secondary-btn" id="fifty-btn" type="button">
+          ½ 50/50
+        </button>
+      </div>
+
+      <div class="quiz-footer">
+        <div class="streak-display">
+          <span>🔥</span>
+          <span>COMBO</span>
+          <strong id="streak">0</strong>
+        </div>
+        <button class="primary-btn" id="next-btn" type="button" disabled>
+          Next Mission →
+        </button>
+      </div>
+    </section>
+
+    <section class="result-panel hidden" id="result-panel">
+      <div class="result-icon">🏆</div>
+      <span class="section-kicker">CHALLENGE COMPLETE</span>
+      <h1 id="result-title">Mission Accomplished!</h1>
+      <p class="hero-text">
+        Every challenge is another step toward becoming a better developer.
+      </p>
+
+      <div class="result-stats">
+        <div class="result-stat">
+          <span>FINAL SCORE</span>
+          <strong id="final-score">0/10</strong>
+        </div>
+        <div class="result-stat">
+          <span>TOTAL XP</span>
+          <strong id="final-xp">0</strong>
+        </div>
+        <div class="result-stat">
+          <span>ACCURACY</span>
+          <strong id="accuracy">0%</strong>
+        </div>
+      </div>
+
+      <div class="badge" id="rank-badge">🚀 Rookie Developer</div>
+
+      <button class="primary-btn" id="restart-btn" type="button">
+        Play Again <span>↻</span>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>DEVQUEST <span>•</span> LEVEL UP YOUR LOGIC</p>
+    <p>Built with HTML, CSS & JavaScript</p>
+  </footer>
+</body>
+</html>
